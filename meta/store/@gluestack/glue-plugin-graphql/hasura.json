@@ -1,0 +1,8 @@
+{
+  "status": "down",
+  "port_number": 10880,
+  "container_id": null,
+  "postgres_instance": "postgres-hasura",
+  "postgres_booted": true,
+  "auth_instance": "auth"
+}

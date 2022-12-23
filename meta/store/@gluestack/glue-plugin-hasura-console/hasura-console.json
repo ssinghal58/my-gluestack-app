@@ -1,0 +1,7 @@
+{
+  "status": "down",
+  "port_number": 11691,
+  "api_port_number": 10891,
+  "container_id": null,
+  "graphql_instance": "hasura"
+}

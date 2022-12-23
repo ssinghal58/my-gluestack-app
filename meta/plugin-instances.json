@@ -1,0 +1,63 @@
+{
+  "@gluestack/glue-plugin-web": [
+    {
+      "instance": "website",
+      "directory": "./website",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-postgres": [
+    {
+      "instance": "postgres-hasura",
+      "directory": "./backend/databases/postgres-hasura",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-graphql": [
+    {
+      "instance": "hasura",
+      "directory": "./backend/hasura",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-hasura-console": [
+    {
+      "instance": "hasura-console",
+      "directory": "",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-minio": [
+    {
+      "instance": "minio",
+      "directory": "./backend/storage/minio",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-storage": [
+    {
+      "instance": "storage",
+      "directory": "./backend/functions/storage",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-auth": [
+    {
+      "instance": "auth",
+      "directory": "./backend/functions/auth",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-functions": [
+    {
+      "instance": "f1",
+      "directory": "./backend/functions/f1",
+      "container_store": {}
+    },
+    {
+      "instance": "f2",
+      "directory": "./backend/functions/f2",
+      "container_store": {}
+    }
+  ]
+}

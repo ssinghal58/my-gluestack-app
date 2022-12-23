@@ -1,0 +1,59 @@
+{
+  "website.local.gluestack.app": [
+    {
+      "path": "/",
+      "proxy": {
+        "instance": "website",
+        "path": "/"
+      }
+    }
+  ],
+  "api.local.gluestack.app": [
+    {
+      "path": "/graphql",
+      "proxy": {
+        "instance": "hasura",
+        "path": "/v1/graphql"
+      }
+    },
+    {
+      "path": "/functions/f1",
+      "proxy": {
+        "instance": "f1",
+        "path": "/users"
+      }
+    },
+    {
+      "path": "/functions/f2",
+      "proxy": {
+        "instance": "f2",
+        "path": "/users"
+      }
+    }
+  ],
+  "auth.local.gluestack.app": [
+    {
+      "path": "/signin",
+      "proxy": {
+        "instance": "auth",
+        "path": "/authentication/signin"
+      }
+    },
+    {
+      "path": "/signup",
+      "proxy": {
+        "instance": "auth",
+        "path": "/authentication/signup"
+      }
+    }
+  ],
+  "files.local.gluestack.app": [
+    {
+      "path": "/upload",
+      "proxy": {
+        "instance": "storage",
+        "path": "/upload"
+      }
+    }
+  ]
+}
